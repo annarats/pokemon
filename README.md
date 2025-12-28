@@ -3,7 +3,7 @@
 A React application that displays Pokémon cards using data from the PokéAPI.
 
 ## Demo
-Live version: https://your-demo-link.vercel.app
+Live version: https://annarats.github.io/pokemon/
 
 ## Tech Stack
 - React
