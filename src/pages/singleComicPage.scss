@@ -1,0 +1,67 @@
+@use '../style/variables.scss' as *;
+
+.single-comic {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  &__img {
+    max-width: 250px;
+    flex-shrink: 0;
+  }
+
+  &__info {
+    max-width: 420px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 16px;
+    color: #000;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: $main-color;
+    margin-top: 20px;
+  }
+
+  &__back {
+
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+
+    background-color: $main-color;
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: 0.3s transform;
+    border-radius: 20px;
+
+    margin-top: 20px;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

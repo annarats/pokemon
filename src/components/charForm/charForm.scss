@@ -1,0 +1,66 @@
+@use '../../style/variables.scss' as *;
+
+.form {
+    &__basic {
+        padding: 25px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        position: relative;
+        z-index: 5;
+        background-color: #fff;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    &__heading {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    &__char {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+
+        input {
+            flex: 1 1 250px;
+            height: 38px;
+            padding: 0 20px;
+            font-size: 20px;
+            border: 2px solid #dcdcdc;
+            border-radius: 3px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: border-color .2s ease, box-shadow .2s ease;
+
+            &::placeholder {
+                color: #bcbcbc;
+            }
+
+            &:focus {
+                border-color: #2f80ed;
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+                outline: none;
+            }
+        }
+    }
+    &__result {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+}
+.success {
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 25px;
+    line-height: 29px;
+    color: rgba(3, 113, 14, 1);
+}
+.error {
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 25px;
+    line-height: 29px;
+    color: rgba(159, 0, 19, 1);
+}

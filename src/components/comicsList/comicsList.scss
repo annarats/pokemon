@@ -1,0 +1,37 @@
+.comics {
+    &__list {
+        margin-top: 45px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 172px);
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    &__item {
+        transition: 0.3s transform;
+        text-align: center;
+        &-img {
+            width: 50px;
+            margin: 0 auto;
+        }
+        &-name {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &-price {
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+        }
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
